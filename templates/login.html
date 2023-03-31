@@ -1,0 +1,10 @@
+<h2>Login Now</h2>
+<form method = "POST" action = "login">
+{%csrf_token%}
+    <p>Username:</p>
+    <Input type="text" name="username"/>
+    <p>Password</p>
+    <input type="password" name="password"/><br>
+    <input type="submit"/>
+
+</form>

@@ -1,0 +1,23 @@
+<h2>Sign In Here</h2>
+<style>
+    h5{
+        color:rgba(19, 206, 112, 0.952)
+    }
+</style>
+{%for message in messages%}
+<h5>{{message}}</h5>
+{% endfor %}
+<form method = 'POST' action ='register'>
+    {%csrf_token%}
+    <p>Username :</p>
+    <input type ='text' name="username"/>
+    <p>Email address :</p>
+    <input type = 'email' name="email"/>
+    <p>Password</p>
+    <input type="password" name='password'/>
+    <p>repeat password:</p>
+    <input type="password" name="password2"/><br>
+    <input type ="submit"/>
+
+
+</form>
